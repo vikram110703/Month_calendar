@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin:0;
+    height: 100vh;
+    background-color: rgb(11, 11, 1);
+    /* display: flex; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    
+}
+.container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.calender{
+    background-color: black;
+    width: 450px;
+    color: white;
+    height:530px;
+    border-radius:10px;
+    box-shadow:1px 1px  5px rgb(176, 174, 174);
+    /* margin-top:2px; */
+    /* margin-bottom: 4px; */
+}
+.month{
+    background-color: rgb(43, 134, 97);
+    display: flex;
+   width:100%;
+   height: 110px;
+   justify-content: center;
+   align-items: center;
+   border-radius:10px 10px 0% 0%;
+}
+.month h1{
+    font-weight: bold;
+    font-size:30px;
+    text-transform: uppercase;
+}
+.month p{
+    font-size:14px;
+    letter-spacing: 1px;
+    font-weight: 300px;
+}
+.weekDays{
+display:flex;
+width: 100%;
+height:50px;  
+}
+.weekDays div{
+    display: flex;
+    font-size: 15px;
+    font-weight: 100%;
+    letter-spacing: 1px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.days{
+    width: 100%;;
+    display: flex;
+    flex-wrap: wrap;
+    padding:1px
+}
+.days div{
+    font-size: 13px;
+    display: flex;
+    margin:2px;
+    width:60px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.days :hover{
+    /* border */
+    /* background-color: rgb(117, 112, 80); */
+    border: 2px solid gray;
+    /* transition:0.1s ease-in-out; */
+    box-shadow: 1px 1px 2px rgb(131, 120, 120);
+    border-radius:20%;
+    cursor: pointer;
+    /* color:burlywood */
+}
+.weekDays div:hover{
+  background-color:rgb(62, 63, 65);
+  border-radius: 20%;
+  color:burlywood
+}
+.today{
+    display: flex;
+    background-color: rgb(43, 134, 97);
+
+    border-radius: 20%;
+}
