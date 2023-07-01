@@ -113,16 +113,23 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+    .body{
+        box-sizing:none;
+    }
     .calender {
         color: white;
         background-color: black;
         width: 100%;
         height: 100vh;
         margin:(0px,20px,0px,20px);
+        border-radius: 0px;
+        box-shadow:none;
         
     }
     .month {
         border-radius: 0px;
+        padding:0px;
+        margin:0px;
     }
 
     .weekDays {
@@ -140,7 +147,7 @@ body {
         justify-content: center;
         align-items: center;
         width:50px;
-        padding-right:7px;
+        padding-right:0px;
     }
 
     .days {
@@ -156,7 +163,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 60px;
-        padding-right: 8px;
+        padding-right: 0px;
     }
 
 
