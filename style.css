@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(11, 11, 1);
+    /* display: flex; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.calender {
+    color: white;
+    background-color: black;
+    width: 45%;
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(176, 174, 174);
+}
+
+.month {
+    background-color: rgb(43, 134, 97);
+    display: flex;
+    width: 100%;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0% 0%;
+}
+
+.month h1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.month p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300px;
+}
+
+.weekDays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 2px;
+    justify-content: center;
+}
+
+.weekDays div {
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 55px;
+    padding-left: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 2px;
+    justify-content: center;
+}
+
+.days div {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 50px;
+    padding-left: 15px;
+}
+
+.days :hover {
+    /* border */
+    /* background-color: rgb(117, 112, 80); */
+    border: 2px solid gray;
+    /* transition:0.1s ease-in-out; */
+    box-shadow: 1px 1px 2px rgb(131, 120, 120);
+    border-radius: 20%;
+    cursor: pointer;
+    /* color:burlywood */
+}
+
+.weekDays div:hover {
+    background-color: rgb(62, 63, 65);
+    border-radius: 20%;
+    color: burlywood
+}
+
+.today {
+    display: flex;
+    background-color: rgb(43, 134, 97);
+    border-radius: 20%;
+}
+
+@media only screen and (max-width: 800px) {
+    .calender {
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 90vh;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px rgb(176, 174, 174);
+    }
+
+    .weekDays {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 2px;
+        justify-content: center;
+        height:50px;
+
+    }
+
+    .weekDays div {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:50px;
+        padding-right:7px;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 2px;
+        justify-content: center;
+    }
+
+    .days div {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        padding-right: 8px;
+    }
+
+
+}
